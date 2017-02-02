@@ -13,6 +13,7 @@ var app = express();
 // prepare bootstrap
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect CSS bootstrap
+app.use('/custcss', express.static(__dirname + '/public/stylesheets')); // redirect CSS bootstrap
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
