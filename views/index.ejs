@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-<script>
-$('.smooth').on('click', function() {
-    $.smoothScroll({
-        scrollElement: $('body'),
-        scrollTarget: '#' + this.id
-    });
-    
-    return false;
-});
-</script>
 
 <html>
   <head>
-  	<title>Nanditha Sreenivasan</title>
-  	<!---CSS/Bootstrap---->
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/custcss/custom.css">
-	<script src="/js/bootstrap.min.js"></script>
-	<!----Fonts---->
-	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-	<!----Partials---->
-    <%- include('partials/header') %>
+    <title>Nanditha Sreenivasan</title>
+  	<!---Custom CSS/Bootstrap---->
+  	<link rel="stylesheet" href="/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="/custcss/custom.css">
+  	<script src="/js/bootstrap.min.js"></script>
+    <!----Jquery Plugins---->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/fullpage/jquery.fullpage.min.js"></script>
+    <link rel="stylesheet" href="/fullpage/jquery.fullpage.min.css">
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+        });
+      });
+    </script>
+  	<!----Fonts---->
+  	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   </head>
 
   <body>
-  	<%- include('partials/iconnav') %>
-  	<%- include('partials/about') %>
-  	<%- include('partials/etc') %>
+    <%- include('partials/header') %>
+    <div id="fullpage">
+    	<%- include('partials/iconnav') %>
+    	<%- include('partials/about') %>
+      <%- include('partials/projects') %>
+    	<%- include('partials/etc') %>
+    </div>
   </body>
 </html>

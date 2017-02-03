@@ -15,6 +15,14 @@ a:hover {
   text-decoration: none;
 }
 
+#navbar {
+  width: 100%;
+  height: 75px;
+  top: 0px;
+  position: absolute;
+  z-index: 999;
+}
+
 .container {
   height: 100%;
   padding-left: 0px;
@@ -38,7 +46,7 @@ a:hover {
   height: 30px;
 }
 
-.header-h1 {
+.page-title {
   font-size : 400%;
   font-family: 'Oswald', serif;
   color: #02132d;
@@ -46,35 +54,27 @@ a:hover {
   opacity: 0.85;
 }
 
-.header-h2 {
-  font-size : 120%;
-  font-family: 'Roboto Condensed', serif;
-  color: #999999;
-  text-align: left;
-  opacity: 0.4;
-}
-
-.menu-font {
-  margin-top: 30px;
-  font-size : 130%;
-  font-family: 'Roboto Condensed', serif;
-  color: #02132d !important;
-  opacity: 0.7;
-  text-align: center;
-}
-
-.about-text {
+.body-large {
   font-family: 'Roboto Condensed', serif;
   color: #e8ebed;
   font-size: 150%; 
   opacity: 0.95;
 }
 
-.body-h4 {
+.body-medium {
   font-family: 'Roboto Condensed', serif;
   color: #e8ebed;
   font-size: 100%; 
   opacity: 0.9;
+}
+
+.navbar-font {
+  margin-top: 30px;
+  font-size : 130%;
+  font-family: 'Roboto Condensed', serif;
+  color: #02132d !important;
+  opacity: 0.7;
+  text-align: center;
 }
 
 .footer-h6 {
