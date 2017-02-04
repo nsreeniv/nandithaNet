@@ -6,13 +6,20 @@ body {
   background-size: cover; 
 }
 
-a {
+a.navbar-font {
+  font-size : 140%;
+  font-family: 'Montserrat', serif;
   color: #02132d;
+  opacity: 0.7;
 }
 
-a:hover {
+a.navbar-font:hover {
   color: hotpink;
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+a.navbar-font:visited {
+  text-decoration: none ;
 }
 
 #navbar {
@@ -21,6 +28,10 @@ a:hover {
   top: 0px;
   position: absolute;
   z-index: 999;
+}
+
+.navbar-div {
+  text-align: right;
 }
 
 .container {
@@ -43,7 +54,7 @@ a:hover {
 .about-icon {
   margin-right: 10px;
   margin-left: 15px;
-  height: 30px;
+  height: 20px;
 }
 
 .page-title {
@@ -64,17 +75,8 @@ a:hover {
 .body-medium {
   font-family: 'Roboto Condensed', serif;
   color: #e8ebed;
-  font-size: 100%; 
+  font-size: 110%; 
   opacity: 0.9;
-}
-
-.navbar-font {
-  margin-top: 30px;
-  font-size : 130%;
-  font-family: 'Roboto Condensed', serif;
-  color: #02132d !important;
-  opacity: 0.7;
-  text-align: center;
 }
 
 .footer-h6 {
