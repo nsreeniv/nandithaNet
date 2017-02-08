@@ -14,6 +14,8 @@ var app = express();
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect CSS bootstrap
 app.use('/custcss', express.static(__dirname + '/public/stylesheets')); // redirect CSS bootstrap
+app.use('/images', express.static(__dirname + '/public/images')); // redirect images folder
+app.use('/fullpage', express.static(__dirname + '/node_modules/fullpage.js/dist')); // redirect for fullpagejs
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
