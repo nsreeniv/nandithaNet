@@ -36,6 +36,7 @@ a.navbar-font:visited, a.body-medium:visited {
 .navbar-default {
     background-color: #06011a;
     border-color: #000000;
+    padding-left: 70%;
 }
 
 .navbar-default .navbar-nav > li > a {
