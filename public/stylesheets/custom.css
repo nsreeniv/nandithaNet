@@ -35,8 +35,6 @@ a.navbar-font:visited, a.body-medium:visited {
 
 .navbar-default {
     background-color: #06011a;
-    border-color: #000000;
-    padding-left: 70%;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -48,10 +46,18 @@ a.navbar-font:visited, a.body-medium:visited {
     color: #c7542a;
 }
 
-.container {
-  height: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
+.navbar-default .navbar-toggle {
+    border-color: #a3bfcc;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #a3bfcc;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #000000;
+    border-color: #c7542a;
 }
 
 .credits {
